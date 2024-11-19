@@ -1,0 +1,111 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #dddbdb;
+    margin: 0;
+    padding: 0;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #4f4f4f;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 40px;
+}
+
+/* Navegação */
+nav {
+    background-color: #4f4f4f;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+    border-radius: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #afafaf;
+    text-decoration: none;
+    padding: 14px 16px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #777;
+}
+
+/* Main */
+main {
+    background-color: white;
+    border-radius: 10px;
+}
+
+main h2 {
+    color: #333;
+    text-align: left;
+    margin: 0 auto;
+    margin-left: 20px;
+    padding: 20px;
+    font-size: 30px;
+}
+
+/* Container da galeria */
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: flex-start;
+    padding: 20px;
+}
+
+.gallery-container img {
+    border-radius: 10px;
+}
+
+/* Rodapé */
+footer {
+    background-color: #4f4f4f;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+/* Media Query para dispositivos móveis */
+@media (max-width: 600px) {
+    body {
+        padding: 0;
+        max-width: 100%;
+    }
+
+    .gallery-container {
+        justify-content: center;
+    }
+
+    .gallery-container img {
+        width: 100%;
+        height: auto;
+    }
+}
